@@ -1,0 +1,26 @@
+<view class="wrap">
+    <view class="control">
+        <view class="cancle" bindtap="cancle">
+            <image class="image" src="./close-light.png" />
+        </view>
+        <view class="message {{color?'cutBorder':''}}">
+            <view class="messageinput {{sum !=''?'cutColor':''}}">{{sum == '' ? placeholderTitle : sum}}</view>
+            <image class="clearicon" src="./close-light.png" bindtap="eliminate"></image>
+            <view class="messageline"></view>
+            <view class="submitbtn" bindtap="submitnum">确定</view>
+        </view>
+    </view>
+    <view class="tips" wx:if="{{errorTips}}">
+       {{errorTitle}}
+    </view>
+
+    <view class="datakeys">
+        <view class="datas">
+            <view  hover-class="pressbtnCut" wx:for="{{keyVal}}" wx:key="index" data-item="{{item}}"
+                data-index="{{index}}" bindtap="addval" class="pressbtn {{index ==11?'deletedStyles':'otherButtons'}}">
+                <image class="image" wx:if="{{index==11}}" src="./backup.png" />
+                {{item}}
+            </view>
+        </view>
+    </view>
+</view>
