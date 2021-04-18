@@ -15,7 +15,7 @@
       "description": "输入框组件",
       "path": "components",
       "logs": [
-        {"time": "2021-04-07", "update": "新建输入框组件", "version": "1.0.0", "mender": "yifeixiang"}
+        {"time": "2021-04-07", "update": "新建输入框组件", "version": "1.0.1", "mender": "yifeixiang"}
       ]
     },
     {
