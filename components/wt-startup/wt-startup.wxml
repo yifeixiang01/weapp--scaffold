@@ -1,0 +1,4 @@
+<view class="container" style="background: {{vehicleBackground}};" wx:if="{{show}}">
+  <image src="./images/ICON.png" class="icon-img"></image>
+  <text class="miniprogram-name" style="color: {{vehicleColor.which}}">{{appName}}</text>
+</view>

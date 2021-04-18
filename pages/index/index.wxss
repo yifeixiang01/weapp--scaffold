@@ -1,0 +1,15 @@
+/**index.wxss**/
+.container{
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
+button{
+  width: 30vw;
+  margin: 5vh;
+}

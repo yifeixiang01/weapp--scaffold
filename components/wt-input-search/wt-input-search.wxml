@@ -1,0 +1,15 @@
+<!--components/wt-input-search/wt-input-search.wxml-->
+<view class="search-wrapper"  style="color: {{colorStyle == 'light'? vehicleColor.which: vehicleColor.colorOpacity8}}; ">
+  <view class="search-box">
+    <view class="search-input" style="background: {{colorStyle === 'ligth'? vehicleColor.colorOpacity10: vehicleColor.colorOpacity1}}">
+      <input type="text" class="input" auto-focus="{{autoFocus}}" style="color: {{vehicleColor.which}}" placeholder="{{placeholder}}" placeholder-class="placeholderClass" value="{{keyword}}" bindconfirm="confirmKeyword" bindinput="onInput"></input>
+      <view class="delete-icon" bindtap="deleteInput">
+        <image src="./images/delete.png" class="img" wx:if="{{keyword.length > 0}}"></image>
+      </view>
+  </view>
+
+  <view class="search-btn" hover-class="search-btn-hover" bindtap="confirmKeyword" style="background: {{colorStyle === 'ligth'? vehicleColor.colorOpacity10: vehicleColor.colorOpacity1}}">{{confirmText}}</view>
+  </view>
+</view>
+
+<view class="search-mask" style="background: {{vehicleBackground}}; color: {{vehicleColor.which}}"></view>

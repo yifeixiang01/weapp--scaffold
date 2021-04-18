@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container" style="background: {{vehicleBackground}}; color: {{vehicleColor.which}}">
+  <block wx:for="{{demoList}}" wx:key="name">
+    <button data-page="{{item.page}}" bindtap="toDemoPage">{{item.name}}</button>
+  </block>
+  
+</view>

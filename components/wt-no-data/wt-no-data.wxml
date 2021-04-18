@@ -1,0 +1,6 @@
+<view class="error-wrapper">
+		<view class="noData-img">
+			<image class="img" src="{{imageUrl || './images/no-results.png'}}"></image>
+		</view>
+		<text class="content" style="color: {{vehicleColor.which}}; opacity:{{colorStyle == 'light'? 0.64: 0.8}};">{{content || '暂无相关内容'}}</text>
+</view>

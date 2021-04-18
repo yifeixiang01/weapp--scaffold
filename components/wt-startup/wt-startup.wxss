@@ -1,0 +1,25 @@
+/* components/wt-startup/wt-startup.wxss */
+.container{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon-img{
+  width: 25.16vh;
+  height: 25.16vh;
+  border-radius: 50%;
+}
+.miniprogram-name{
+  margin-top: 7.2vh;
+  font-family: PingFangSC-Semibold;
+  font-size: 7.69vh;
+  letter-spacing: 0.64vh;
+  color: #3A3C40;
+  font-weight: bold;
+}

@@ -1,0 +1,46 @@
+/* components/errorComponent/error.wxss */
+
+.error-wrapper {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.network-error-img, .load-error-img {
+  width: 32.1vh;
+  height: 32.1vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.network-error-img .img, .load-error-img .img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  font-family: Helvetica;
+  font-size: 5.128vh;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 5.769vh;
+  margin-top: 6.4vh;
+}
+
+/* 无数据 */
+
+.noData-img {
+  width: 38.46vh;
+  height: 25.6vh;
+}
+
+.noData-img .img {
+  width: 100%;
+  height: 100%;
+}

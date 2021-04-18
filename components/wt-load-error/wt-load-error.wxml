@@ -1,0 +1,6 @@
+<view class="error-wrapper">
+  <view class="load-error-img">
+    <image class="img" src="./images/load-error.png"></image>
+  </view>
+  <text class="content" style="color: {{vehicleColor.which}}; opacity:{{colorStyle == 'light'? 0.64: 0.8}};">{{content || '加载失败，请检查网络再重试'}}</text>
+</view>

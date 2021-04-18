@@ -1,0 +1,50 @@
+/* components/list-scroll/list-scroll.wxss */
+.scroll-list-wrap{
+	width: inherit;
+	height: inherit;
+	display: flex;
+	align-items: center;
+}
+
+.scroll-list{
+	width: 100%;
+	white-space: nowrap;
+}
+.list-wrap{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+  margin-left: 7.692vh;
+}
+.scroll-item{
+	display: inline-block;
+}
+.load-status{
+	width: 32vh;
+	height: 100%;
+	font-size: 4.487vh;
+	letter-spacing: 0;
+}
+.load-prompt{
+	width: 32vh;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loading-img{
+	width: 10.3vh;
+	height: 10.3vh;
+}
+.rotate-animation{
+	animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}

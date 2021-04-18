@@ -1,0 +1,46 @@
+{
+  "weappName": "",
+  "weappNameZh": "",
+  "modules": [
+    {
+      "name": "wt-list-scroll",
+      "description": "列表滚动组件",
+      "path": "components",
+      "logs": [
+        {"time": "2021-04-07", "update": "新建列表滚动组件", "version": "1.0.0", "mender": "yifeixiang"}
+      ]
+    },
+    {
+      "name": "wt-input-search",
+      "description": "输入框组件",
+      "path": "components",
+      "logs": [
+        {"time": "2021-04-07", "update": "新建输入框组件", "version": "1.0.0", "mender": "yifeixiang"}
+      ]
+    },
+    {
+      "name": "wt-load-error",
+      "description": "加载失败组件",
+      "path": "components",
+      "logs": [
+        {"time": "2021-04-07", "update": "新建加载失败组件", "version": "1.0.0", "mender": "yifeixiang"}
+      ]
+    },
+    {
+      "name": "wt-no-data",
+      "description": "空数据组件",
+      "path": "components",
+      "logs": [
+        {"time": "2021-04-07", "update": "新建空数据组件", "version": "1.0.0", "mender": "yifeixiang"}
+      ]
+    },
+    {
+      "name": "wt-startup",
+      "description": "启动页组件",
+      "path": "components",
+      "logs": [
+        {"time": "2021-04-07", "update": "新建启动页组件", "version": "1.0.0", "mender": "yifeixiang"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<!--components/list-scroll/list-scroll.wxml-->
+
+<view class="scroll-list-wrap">
+	<!-- 异常情况 初次请求失败-->
+  <slot name="loadError" wx:if="{{listLen == 0 && loadError}}"></slot>
+  <!-- 异常情况 初次请求没有数据 -->
+  <slot name="noData" wx:elif="{{listLen == 0 && noData}}"></slot>
+	<!-- 列表 -->
+	<scroll-view class="scroll-list" scroll-x lower-threshold="100" bindscrolltolower="onScrollToLower" wx:elif="{{listLen > 0}}">
+		<view class="list-wrap">
+			<!-- 此处放置的是卡片item -->
+			<slot class="scroll-item"></slot>
+
+			<!-- 提示 加载中&没有更多数据 -->
+			<view class="load-status" style="color: {{colorStyle == 'light'? vehicleColor.which: vehicleColor.colorOpacity2}}" wx:if="{{!loadError}}">
+				<view class="load-prompt" >
+					<image src="./images/Container-{{colorStyle || 'dark'}}.png" class="loading-img rotate-animation" style="display: {{showLoadingIcon? '': 'none'}}"></image>	
+					<text style="display: {{!showLoadingIcon && noData? '': 'none'}}">{{noMoreContent}}</text>
+				</view>
+			</view>
+		</view>
+	</scroll-view>
+</view>
